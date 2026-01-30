@@ -1,13 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 @import "tailwindcss";
-
 @theme {
     --color-primary-50: #EDF2FB;
+    --color-primary-100: #ccedff;
+    --color-primary-200: #99dbff;
+    --color-primary-300: #66c9ff;
+    --color-primary-400: #33b8ff;
+    --color-primary-500: #00a6ff;
+    --color-primary-600: #0085cc;
+    --color-primary-700: #006399;
+    --color-primary-800: #004266;
+    --color-primary-900: #002133;
+    --color-primary-950: #001724;
+    --color-primary-950: #001724;
+    --font-inconsolata: "Inconsolata", monospace;
 }
+
 html,
 body {
-    @apply bg-primary-50 min-h-screen;
-    @apply text-black;
+    @apply bg-primary-950 min-h-screen;
+    @apply text-white;
     @media (prefers-color-scheme: light) {
         color-scheme: light;
     }
+    
 }
