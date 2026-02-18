@@ -1,0 +1,16 @@
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: bonny-cloudflared
+    command: tunnel run frontend-bonny
+    volumes:
+      - ./cloudflared:/etc/cloudflared:ro
+    restart: unless-stopped
+    cpus: "0.5"
+    mem_limit: 100m
+  homepage:
+    build: .
+    container_name: bonny-homepage
+    restart: unless-stopped
+    cpus: "0.5"
+    mem_limit: 100m
