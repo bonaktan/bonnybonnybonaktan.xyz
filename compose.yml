@@ -9,28 +9,18 @@ services:
     cpus: "0.5"
     mem_limit: 100m
     networks:
-        - bonnyfrontend
-  nginx:
-    container_name: bonny-nginx
-    restart: unless-stopped
-    depends_on:
-      - homepage
-    volumes:
-      - ${CERT_PATH}/fullchain.pem:/etc/ssl/certs/fullchain.pem:ro
-      - ${CERT_PATH}/privkey.pem:/etc/ssl/private/privkey.pem:ro
-    build: 
-      context: ./
-      dockerfile: Dockerfile.nginx
-    networks:
       - bonnyfrontend
   homepage:
     build:
       context: ./
       dockerfile: Dockerfile.homepage
+    volumes:
+      - ${CERT_PATH}/fullchain.pem:/etc/ssl/certs/fullchain.pem:ro
+      - ${CERT_PATH}/privkey.pem:/etc/ssl/private/privkey.pem:ro
     container_name: bonny-homepage
     restart: unless-stopped
     cpus: "0.5"
-    mem_limit: 100m
+    mem_limit: 20m
     networks:
       - bonnyfrontend
 
