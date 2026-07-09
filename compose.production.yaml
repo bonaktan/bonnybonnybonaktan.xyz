@@ -1,0 +1,12 @@
+volumes:
+  static-website-data:
+    external: true
+    name: home-server_static-website-data
+
+services:
+  cloudflared:
+    !reset null
+  homepage:
+    volumes:
+      - static-website-data:/var/www:rw
+    
