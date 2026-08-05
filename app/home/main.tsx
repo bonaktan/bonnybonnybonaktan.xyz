@@ -43,13 +43,14 @@ export const Main = () => {
                 <p>--- i still hadn&apos;t gotten around to styling this part :3 ---</p>
                 <div className="p-2">
                     <p>current works:</p>
-                    <Works name="[secret game :3] - Tester" description="does it exist? yes!" />
+                    <Works name="Hydroelectric Simulator - Lead Tester" description="it's all a trauma response" />
+                    <Works name="Hydroelectric Simulator - Systems Department" description="handcoded clankers? HELLYEAAAA" />
                     <Works name="ITskolarSystem - Backend Developer, System Admin" description='a custom bot that we like to describe as "shit"' />
                 </div>
                 <div className="p-2">
                     <p>past works:</p>
                     <Works name="Realistic Boiling Water Reactor Simulation Community - Quality Assurance (Nov 2025 - Apr 2026)" description="hey developer, we reached -65535 aprm" />
-                    {/* <Works name="Realistic Boiling Water Reactor Simulation Community - Technical Department (Apr 2026)" description="vibecoded clankers? hellyeaaaaaaaaaa" /> */ /* i am not sure if this should be included ngl */ }
+                    <Works name="Realistic Boiling Water Reactor Simulation Community - Technical Department (Apr 2026)" description="vibecoded clankers? hellyeaaaaaaaaaa" />  { /* i am not sure if this should be included ngl */ }
                     {/* <Works name="Deep Space Tycoon:Reborn - Quality Assurance (Jan 2026 - Feb 2026)" description="press button yes press button yes, ooo munni!" /> */}
                     <Works name="ENGRISH - Head Developer" description="fix your engrish with engrish so that it turns to english (Sep 2024 - Mar 2025)" />
                 </div>
@@ -61,7 +62,7 @@ export const Main = () => {
                 </p>
             </div>
             <div className="flex mt-2">
-                <p>message of the push: hehe, dunce &lt; :3</p>
+                <p>message of the push: </p>
             </div>
         </div>
     );
